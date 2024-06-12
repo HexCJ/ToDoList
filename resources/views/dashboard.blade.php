@@ -7,23 +7,23 @@
     <div class="container1" style="width:800px">
     <div class="mb-4">
         <label for="username" class="block text-gray-700 text-sm font-bold mb-2">Username:</label>
-        <input type="text" id="username" name="username" value="{{$user->username}}" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+        <input type="text" id="username" name="username" value="{{$user->username}}" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required disabled>
     </div>
     <div class="mb-4">
         <label for="nama_lengkap" class="block text-gray-700 text-sm font-bold mb-2">Nama:</label>
-        <input type="text" id="nama_lengkap" name="nama_lengkap" value="{{$user->profil->nama_lengkap}}" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+        <input type="text" id="nama_lengkap" name="nama_lengkap" value="{{$user->profil->nama_lengkap}}" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required disabled>
     </div>
     <div class="mb-4">
         <label for="nomor_telp" class="block text-gray-700 text-sm font-bold mb-2">Nomor Telp:</label>
-        <input type="text" id="nomor_telp" name="nomor_telp" value="{{$user->profil->nomor_telp}}" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+        <input type="text" id="nomor_telp" name="nomor_telp" value="{{$user->profil->nomor_telp}}" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required disabled>
     </div>
     <div class="mb-4">
         <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
-        <input type="text" id="email" name="email" value="{{$user->email}}" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+        <input type="text" id="email" name="email" value="{{$user->email}}" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required disabled>
     </div>
     <div class="mb-4">
         <label for="alamat" class="block text-gray-700 text-sm font-bold mb-2">Alamat:</label>
-        <input type="text" id="alamat" name="alamat" value="{{$user->profil->alamat}}" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+        <input type="text" id="alamat" name="alamat" value="{{$user->profil->alamat}}" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required disabled>
     </div>
     </div>
     <div class="container2">

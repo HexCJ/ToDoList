@@ -25,7 +25,8 @@ Route::get('/register', function () {
     return view('auth.register');
 })->name('register');
 
-
+Route::get('/users', [UserController::class, 'showall'])->name('userall');
+Route::get('/users/{id}', [UserController::class, 'showUserDetail'])->name('users.show');
 
 Route::get('/dashboard', [DashboardController::class, 'show'])->name('dashboard');
 Route::post('/profiletambah', [DashboardController::class, 'store'])->name('tambah_profile');
