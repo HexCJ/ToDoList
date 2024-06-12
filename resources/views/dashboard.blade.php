@@ -6,11 +6,11 @@
 <div class="ms-5 flex">
     <div class="container1" style="width:800px">
     <div class="mb-4">
-        <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Nama:</label>
-        <input type="text" id="name" name="name" value="{{$user->name}}" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+        <label for="username" class="block text-gray-700 text-sm font-bold mb-2">Username:</label>
+        <input type="text" id="username" name="username" value="{{$user->username}}" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
     </div>
     <div class="mb-4">
-        <label for="nama_lengkap" class="block text-gray-700 text-sm font-bold mb-2">Nama Lengkap:</label>
+        <label for="nama_lengkap" class="block text-gray-700 text-sm font-bold mb-2">Nama:</label>
         <input type="text" id="nama_lengkap" name="nama_lengkap" value="{{$user->profil->nama_lengkap}}" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
     </div>
     <div class="mb-4">
@@ -35,7 +35,7 @@
 </div>
 @else
 <h1 class="text-2xl font-bold ms-5 mb-3">Lengkapi Profil anda</h1>
-<div class="w-96 ms-5">
+<div class="w-96 ms-5" style="width: 1190px">
 <form method="POST" action="{{ route('tambah_profile') }}">
     @csrf
     <div class="mb-4">

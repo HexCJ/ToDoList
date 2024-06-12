@@ -42,4 +42,26 @@
             icon: "successd"
         });
     </script>
+@elseif(session('success-register'))
+    <script>
+        Swal.fire({
+            title: "Register berhasil!",
+            text: "{{ session('success-delete') }}!",
+            background: '#FFFDD7',
+            color: '#0C0C0C',
+            confirmButtonColor: '#E72929',
+            icon: "successd"
+        });
+    </script>
+@elseif(session('fail-register'))
+<script>
+    Swal.fire({
+        title: "Gagal!",
+        text: "{{ session('fail') }}!",
+        background: '#FFFDD7',
+        color: '#0C0C0C',
+        confirmButtonColor: '#E72929',
+        icon: "error"
+    });
+</script>
 @endif

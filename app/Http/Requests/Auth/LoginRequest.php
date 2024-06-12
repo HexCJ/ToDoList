@@ -53,7 +53,13 @@ class LoginRequest extends FormRequest
 
         // Trigger notif selamat datang(flash) dengan toaster
         $user = Auth::user();
-        session()->flash('welcome', 'Selamat datang, ' . $user->name . '!');
+        if($user->profil){
+            session()->flash('welcome', 'Selamat datang, ' . $user->profil->nama_lengkap . '!');
+        }
+        else
+        {
+            session()->flash('welcome', 'Selamat datang, ' . $user->username . '!');
+        }
     }
 
     /**

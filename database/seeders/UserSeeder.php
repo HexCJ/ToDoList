@@ -14,14 +14,14 @@ class UserSeeder extends Seeder
     public function run(): void
     {
         $admin = User::updateOrCreate([
-            'name'=>'Jonathan',
+            'username'=>'Jonathan',
             'email'=>'jonathan@example.com',
             'password'=>bcrypt('1')
         ]);
         //buat role sesuai RolePermission
         $admin->assignRole('admin');
         $user = User::updateOrCreate([
-            'name'=>'user',
+            'username'=>'user',
             'email'=>'user@example.com',
             'password'=>bcrypt('2')
         ]);
